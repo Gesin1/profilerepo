@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(8, 9, 20);
+  padding: 0.7rem 15%;
+}
+
+.nav-bar p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: white;
+  cursor: pointer;
+  transition: linear 2s ease-in-out;
+}
+
+.nav-bar p:hover {
+  color: rgba(241, 243, 247, 0.856);
+  transform: scale(1.2);
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+}
+
+.nav-bar ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.nav-bar ul li a {
+  font-size: 1.5rem;
+  color: white;
+  transition: all 2s ease-in-out;
+}
+
+.nav-bar ul li a:hover {
+  color: rgba(230, 230, 230, 0.692);
+}
+
+section .home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 15%;
+}
+
+section .hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(8, 8, 20);
+}
+
+section .hero h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(82, 82, 83);
+  width: 400px;
+  margin-top: 0.3rem;
+}
+
+section .contact {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 1rem;
+}
+
+section .contact p {
+  font-size: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+section .line {
+  width: 2px;
+  height: 20px;
+  border: 1px solid rgb(8, 9, 20);
+}
+
+section .icon {
+  font-size: 2rem;
+  color: rgb(8, 9, 20);
+  transition: all ease-in-out;
+}
+
+section .icon:hover {
+  transform: scale(1.2);
+}
+
+section .linkedln {
+  font-size: 1.8rem;
+}
+
+section .tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 9, 20);
+  margin-top: 1rem;
+  padding: 1rem 15%;
+}
+
+section .tools p {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-wrap: nowrap;
+  margin-bottom: 1rem;
+}
+
+.tools .links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links-container .links {
+  margin: 1rem 0;
+  border: 1px solid white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.links-container .links:hover {
+  background-color: whitesmoke;
+}
+
+.links-container .hng {
+  padding: 0.5rem 3.5rem;
+}
+.links-container .dog {
+  padding: 0.5rem 1.4rem;
+}
+
+.links-container a {
+  margin: 0 2rem;
+  list-style: none;
+  color: #fff;
+  text-decoration: none;
+}
+
+.links-container a:hover {
+  color: rgb(8, 9, 20);
+}
+
+.about-container h2 {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 3rem 15%;
+}
+
+section .about-content h4 {
+  margin-bottom: 0.5rem;
+  width: 400px;
+  font-size: 1.5rem;
+}
+
+section .about-content p {
+  width: 350px;
+  line-height: 1.5;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  background-color: rgb(8, 9, 20);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 15%;
+}
+
+footer p {
+  color: #fff;
+}
+
+@media (max-width: 1300px) {
+  .nav-bar {
+    padding: 0.7rem 9%;
+    justify-content: space-between;
+  }
+  section .home {
+    padding: 3rem 9%;
+  }
+  .about {
+    padding: 3rem 9%;
+  }
+}
+
+@media (max-width: 950px) {
+  .nav-bar {
+    padding: 0.7rem 3%;
+  }
+  section .home {
+    padding: 3rem 3%;
+  }
+  .about {
+    padding: 3rem 3%;
+  }
+}
+
+@media (max-width: 750px) {
+  section .home {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  section .hero {
+    text-align: center;
+  }
+
+  section .hero h3 {
+    width: 100%;
+  }
+  section .contact {
+    justify-content: center;
+  }
+  .tools .links-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section .about-content h4 {
+    text-align: center;
+  }
+  section .about-content h4 {
+    text-align: center;
+  }
+  section .about-content p {
+    text-align: center;
+  }
+  footer p {
+    width: 400px;
+  }
+  section .about-content h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  section .about-content p {
+    width: 400px;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+@media (max-width: 380px) {
+  .nav-bar {
+    padding: 0.7rem 3%;
+  }
+}
