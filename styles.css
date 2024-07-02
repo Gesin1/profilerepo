@@ -11,6 +11,7 @@ img {
 }
 
 body {
+  min-height: 100vh;
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -169,6 +170,10 @@ section .tools p {
   color: rgb(8, 9, 20);
 }
 
+.about-container {
+  max-width: 100%;
+}
+
 .about-container h2 {
   text-align: center;
   margin-top: 3rem;
@@ -182,16 +187,22 @@ section .tools p {
   justify-content: space-between;
   align-items: start;
   padding: 3rem 15%;
+  gap: 3rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
 }
 
 section .about-content h4 {
   margin-bottom: 0.5rem;
-  width: 400px;
   font-size: 1.5rem;
 }
 
 section .about-content p {
-  width: 350px;
   line-height: 1.5;
   font-size: 1.1rem;
   font-weight: 500;
@@ -235,7 +246,7 @@ footer p {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   section .home {
     flex-direction: column-reverse;
     gap: 3rem;
@@ -259,13 +270,14 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
   }
-  section .about-content h4 {
-    text-align: center;
+
+  .about-content {
+    align-items: center;
+    margin-top: 1.5rem;
   }
-  section .about-content h4 {
-    text-align: center;
-  }
+
   section .about-content p {
     text-align: center;
   }
@@ -273,20 +285,31 @@ footer p {
     width: 400px;
   }
   section .about-content h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1.3rem;
+    text-align: center;
+    max-width: 500px;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
   }
   section .about-content p {
-    width: 400px;
+    width: 500px;
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
   }
 }
 
-@media (max-width: 380px) {
-  .nav-bar {
-    padding: 0.7rem 3%;
+@media (max-width: 500px) {
+  section .about-content h4 {
+    max-width: 350px;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+  }
+  section .about-content p {
+    width: 300px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
