@@ -8,6 +8,7 @@
 
 img {
   display: block;
+  border-radius: 10px;
 }
 
 body {
@@ -63,6 +64,11 @@ section .home {
   justify-content: space-between;
   align-items: center;
   padding: 3rem 15%;
+}
+
+.home img {
+  box-shadow: 1px 1px 1px 2px rgb(224, 223, 223);
+  border-radius: 10px;
 }
 
 section .hero h1 {
