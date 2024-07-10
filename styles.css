@@ -266,7 +266,7 @@ footer p {
 
 @media (max-width: 950px) {
   .nav-bar {
-    padding: 0.7rem 3%;
+    padding: 1rem 3%;
   }
   section .home {
     padding: 3rem 3%;
@@ -333,7 +333,7 @@ footer p {
   }
   .about img {
     width: 20rem;
-    height: 20rem;
+    height: 19rem;
   }
 }
 
@@ -349,5 +349,13 @@ footer p {
     font-size: 1.1rem;
     font-weight: 500;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  .image {
+    width: 18rem;
+    height: 18rem;
+  }
+  .about img {
+    width: 18rem;
+    height: 15rem;
   }
 }
